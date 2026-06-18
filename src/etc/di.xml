@@ -10,7 +10,7 @@
     <type name="Magento\LoginAsCustomerApi\Model\IsLoginAsCustomerEnabledForCustomerChain">
         <arguments>
             <argument name="resolvers" xsi:type="array">
-                <item name="is_allowed" xsi:type="null"/>
+                <item name="is_allowed" xsi:type="object">SR\DisableCustomerRemoteAssistanceConsent\Model\Resolver\AlwaysAllowedResolver</item>
             </argument>
         </arguments>
     </type>
